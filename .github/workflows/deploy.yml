@@ -26,7 +26,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Install dependencies
         uses: pnpm/actions-setup@v4
-        run_install: true
+        with:
+          run_install: true
       - name: Build the website
         run: pnpm build
       - name: Setup Pages

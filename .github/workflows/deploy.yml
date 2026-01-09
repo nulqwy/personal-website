@@ -28,6 +28,7 @@ jobs:
         uses: pnpm/action-setup@v4
         with:
           run_install: true
+          version: 10
       - name: Build the website
         run: pnpm build
       - name: Setup Pages

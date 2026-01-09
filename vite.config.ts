@@ -13,6 +13,7 @@ export default defineConfig({
 			strategy: ['url'],
 			urlpatterns: [
 				['uk', '/uk/:path(.*)?'],
+				['uk', '/uk.html'],
 				['en', '/:path(.*)?']
 			]
 		})

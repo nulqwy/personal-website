@@ -26,23 +26,11 @@
 		<LineBreak><Text>{m.slogan()}</Text></LineBreak>
 		<div class="mx-auto flex justify-center gap-10">
 			<Text>
-				<a
-					class="hover:underline data-[current=true]:font-bold"
-					data-current={getLocale() == 'en'}
-					href={localizeHref(page.url.pathname, { locale: 'en' })}
-				>
-					english
-				</a>
+				<a data-sveltekit-reload class="hover:underline" href="/"> english </a>
 			</Text>
 
 			<Text>
-				<a
-					class="hover:underline data-[current=true]:font-bold"
-					data-current={getLocale() == 'uk'}
-					href={localizeHref(page.url.pathname, { locale: 'uk' })}
-				>
-					українська
-				</a>
+				<a data-sveltekit-reload class="hover:underline" href="/uk"> українська </a>
 			</Text>
 		</div>
 	</footer>

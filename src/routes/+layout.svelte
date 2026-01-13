@@ -28,7 +28,7 @@
 			{#snippet localeLink(href: string, locale: string, name: string)}
 				<Text>
 					{#if getLocale() != locale}
-						<a class="underline hover:italic" {href}>{name}</a>
+						<a data-sveltekit-reload class="underline hover:italic" {href}>{name}</a>
 					{:else}
 						<span class="font-bold">{name}</span>
 					{/if}
